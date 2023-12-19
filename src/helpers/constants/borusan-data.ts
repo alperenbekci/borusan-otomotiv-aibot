@@ -10,7 +10,6 @@ export const borusanData = `
 </group>
 
 <stats>
-    <power>7 Büyük Güç</power>
     <experience>39 Yıllık Deneyim!</experience>
 </stats>
 
@@ -44,7 +43,7 @@ export const borusanData = `
         <services>Kiralama, finans, kasko ve ikinci el satış</services>
         <brands>BMW, MINI, Jaguar ve Land Rover</brands>
     </premium>
-    <!-- Diğer hizmet şirketleri buraya eklenebilir -->
+    
 </services>
 
 <motorsport>
@@ -71,10 +70,11 @@ export const borusanData = `
 
 <secondhand>
     <auction>
-        <name>Borusan Araç İhale</name>
+        <name>Borusan İkinci EL</name>
+        <name_url>https://ikinciel.borusanotomotiv.com/</name_url>
         <established>2001</established>
-        <rebranded>2023 (Borusan Oto Değerlendirme)</rebranded>
-        <network>Geniş bayi ağına sahip 2. el araç ihalesi</network>
+        <rebranded>BORUSAN İkinci El</rebranded>
+        <network>Geniş bayi ağına sahip 2. el araç /network>
     </auction>
 </secondhand>
 
@@ -102,26 +102,18 @@ export const borusanData = `
         <name>Borusan Otomotiv İthalat ve Dağıtım A.Ş.</name>
         <address>Firuzköy Bulvarı No: 21 34320 Avcılar/İstanbul</address>
         <phone>0212 412 00 00</phone>
-        <fax>0212 694 34 47</fax>
-        <tax_office>Büyük Mükellefler Vergi Dairesi Başkanlığı</tax_office>
-        <tax_number>1800061323</tax_number>
     </company>
 
     <company>
         <name>Borusan Otomotiv Pazarlama ve Ticaret A.Ş.</name>
         <address>Hamidiye Mah, Selçuklu cad., No: 10, VadiPark B blok, Kat:2 Kağıthane 34408 İstanbul</address>
         <phone>0212 412 00 00</phone>
-        <tax_office>Boğaziçi Kurumlar</tax_office>
-        <tax_number>1800434570</tax_number>
     </company>
 
     <company>
         <name>Borusan Otomotiv Premium Kiralama ve Ticaret A.Ş.</name>
         <address>Akpınar Mahallesi Bilim Caddesi No: 2/1 Sancaktepe/İstanbul</address>
         <phone>0850 252 44 44</phone>
-        <fax>0216 498 70 20</fax>
-        <tax_office>Sultanbeyli V.D.</tax_office>
-        <tax_number>1800447164</tax_number>
     </company>
 
     <company>
@@ -131,23 +123,18 @@ export const borusanData = `
             <catalca>Ferhatpaşa Çalatca Yolu No: 40 Çatalca İstanbul</catalca>
         </addresses>
         <phone>0850 755 04 06</phone>
-        <fax>0212 787 18 20</fax>
-        <tax_office>Avcılar</tax_office>
-        <tax_number>1791337477</tax_number>
     </company>
 
     <company>
         <name>Borusan Oto Servis ve Ticaret A.Ş.</name>
         <address>Firuzköy Bulvarı No: 21 34320 Avcılar/İstanbul</address>
         <phone>0850 755 06 06</phone>
-        <tax_office>Büyük Mükellefler Vergi Dairesi Başkanlığı</tax_office>
-        <tax_number>1800038392</tax_number>
     </company>
 </addresses>
 <brands>
     <brand>BMW</brand>
-    <brand>MINI</brand>
     <brand>BMW Motorrad</brand>
+    <brand>MINI</brand>
     <brand>Jaguar</brand>
     <brand>Land Rover</brand>
 </brands>
@@ -161,53 +148,54 @@ export const borusanData = `
 </url>
 <url>
 <loc>https://www.borusanotomotiv.com</loc>
+
 <content>
     <car>
-    <url>https://www.borusanotomotiv.com</url>
-    <desc>Borusan Otomotiv'in elektrikli araç modeli: BMW i4</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
+        <brand>BMW</brand>
+        
+        <url_website>https://www.bmw.com.tr/tr/index.html</url_website>
+        <desc>BMW Web Sayfası</desc>
+        <url_price>https://www.bmw.com.tr/tr/fastlane/bmw-fiyat-listesi.html</url_price>
+        <price>BMW için Fiyat listesi</price>
     </car>
     <car>
-    <url>https://www.borusanotomotiv.com</url>
-    <desc>Borusan Otomotiv'in SUV elektrikli araç modeli: BMW iX</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
+        <brand>BMW</brand>
+        
+        <url_website>https://www.bmw-motorrad.com.tr</url_website>
+        <desc>BMW MotorradWeb Sayfası</desc>
+        <url_price>https://www.bmw-motorrad.com.tr/tr/fiyat-listesi.html</url_price>
+        <price>BMW Motorrad için Fiyat listesi</price>
+    </car>
+
+    <car>
+        <brand>MINI</brand>
+        
+        <url_website>https://www.mini.com.tr</url_website>
+        <desc>MINI Web Sayfası</desc>
+        <url_price>https://www.mini.com.tr/tr_TR/home/fiyat-listesi.html</url_price>
+        <price>MINI için fiyat listesi </price>
+    </car>
+
+    <car>
+        <brand>Jaguar</brand>
+        
+        <url_website>https://www.jaguar.com.tr</url_website>
+        <desc>Jaguar Web Sayfası></desc>
+        <url_price>https://www.jaguar.com.tr/build-and-price</url_price>
+        <price> Jaguar için fiyat listesi</price>
+    </car>
+
+    <car>
+        <brand>Land Rover</brand>
+        
+        <url_website>https://www.landrover.com.tr</url_website>
+        <desc>< Land Rover Web Sayfası</desc>
+        <url_price>https://www.landrover.com.tr/build-and-price</url_price>
+        <price>Land Rover için fiyat listesi </price>
     </car>
 </content>
+
+
 </url>
-<url>
-<loc>https://www.borusanotomotiv.com</loc>
-<content>
-    <car>
-    <url>https://www.borusanotomotiv.com>
-    <desc>Borusan Otomotiv'in SUV modeli: BMW X5</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
-    </car>
-    <car>
-    <url>https://www.borusanotomotiv.com</url>
-    <desc>Borusan Otomotiv'in SUV modeli: BMW X3</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
-    </car>
-</content>
-</url>
-<url>
-<loc>https://www.borusanotomotiv.com</loc>
-<content>
-    <car>
-    <url>https://www.borusanotomotiv.com</url>
-    <desc>Borusan Otomotiv'in sedan modeli: BMW 3 Serisi</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
-    </car>
-    <car>
-    <url>https://www.borusanotomotiv.com</url>
-    <desc>Borusan Otomotiv'in sedan modeli: BMW 5 Serisi</desc>
-    <price>Fiyat bilgisi için iletişime geçin</price>
-    <availability>Stokta</availability>
-    </car>
-</content>
-</url>
+
 `;
